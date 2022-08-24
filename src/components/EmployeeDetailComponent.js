@@ -16,7 +16,12 @@ const EmployeeDetail = (props) => {
                         <hr />
                     </div>
                 </div>
+                <div className='row'>
+                    <div className='col-lg-3 col-md-4 col-12'>
+                        <CardImg src={props.staff.image} alt={props.staff.name} />
+                    </div>
 
+                </div>
             </div>
         )
 
