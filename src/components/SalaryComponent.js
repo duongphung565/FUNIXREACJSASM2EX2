@@ -8,7 +8,26 @@ function CountSalary({ staff }) {
         <CardHeader>Lương: {Math.floor(salaryEmployee)}</CardHeader>
     )
 }
-
+//Hàm hiển thi thuộc tính từng nhân viên
+function RenderSalary({ staffs }) {
+    return (
+        staffs.map((staff) => {
+            return (
+                <div key={staff.id} className='col-lg-4 col-md-6 col-12'>
+                    <Card className={'p-2 m-2'}>
+                        <CardBody>
+                            <h3>{staff.name}</h3>
+                            <CardTitle>Mã nhân viên: {staff.id}</CardTitle>
+                            <CardTitle>Hệ số lượng: {staff.salaryScale}</CardTitle>
+                            <CardTitle>Số ngày làm thêm: {staff.overTime}</CardTitle>
+                            <CountSalary staff={staff} />
+                        </CardBody>
+                    </Card>
+                </div>
+            )
+        })
+    )
+}
 const EmployeeSalarys = (props) => {
     const [sortValueID, setSortID] = useState(false);
     function sortID() {
