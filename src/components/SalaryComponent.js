@@ -18,7 +18,12 @@ const EmployeeSalarys = (props) => {
                             <BreadcrumbItem active>Bảng lương</BreadcrumbItem>
                         </Breadcrumb>
                     </div>
-
+                    <div className='col-12'>
+                        Sắp xếp:
+                        <button onClick={sortID}>Mã nhân viên <span className="fa fa-sort ">
+                        </span>
+                        </button>
+                    </div>
                 </div>
                 <div className='row'>
                     <RenderSalary staffs={props.staffs.sort((a, b) => sortValueID ? a.id - b.id : b.id - a.id)}
