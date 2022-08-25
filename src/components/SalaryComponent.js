@@ -12,6 +12,12 @@ const EmployeeSalarys = (props) => {
         return (
             <div className='container employee_detail'>
                 <div className='row'>
+                    <div className='col-12'>
+                        <Breadcrumb>
+                            <BreadcrumbItem><Link to="/staffs">Nhân Viên</Link></BreadcrumbItem>
+                            <BreadcrumbItem active>Bảng lương</BreadcrumbItem>
+                        </Breadcrumb>
+                    </div>
 
                 </div>
                 <div className='row'>
