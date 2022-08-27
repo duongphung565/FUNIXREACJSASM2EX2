@@ -1,4 +1,4 @@
 link repository
-https://github.com/duongphung565/FUNIXREACJSASM2EX.git
+https://github.com/duongphung565/FUNIXREACJSASM2EX2.git
 branch
 RJS101x_Assignment2_duongnpfx16205@funix.edu.vn
